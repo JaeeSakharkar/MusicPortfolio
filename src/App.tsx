@@ -1,7 +1,8 @@
 
 "use client";
 import { useState } from "react";
-import ContactSection from "./components/ContactSection";
+// import ContactSection from "./components/ContactSection";
+import ContactSection from "./components/Contactsection";
 import { Mail, Phone, MapPin } from "lucide-react";
 import myPhoto from "./assets/myphoto.jpeg";
 import instrupic from "./assets/instrupic.jpeg";
@@ -9,7 +10,9 @@ import avadhoot from "./assets/avadhoot.jpeg";
 import shubha from "./assets/Shubha.jpeg";
 import yashwant from "./assets/Yashwant.jpeg";
 import sheldon from "./assets/sheldon.jpeg";
-import audioFile from "./assets/audio.mpeg";
+// import audioFile from "./assets/audio.mpeg";
+// import audioFile from "./assets/audio.mpeg";
+import audioFile from "./assets/demo.mp3";
 import teaching from "./assets/teaching.jpeg";
 
 import { 
