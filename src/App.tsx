@@ -278,7 +278,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-gray-50 p-6 rounded-xl flex flex-col items-center">
+            <div className="flex justify-center">
             <div className="w-full max-w-xl aspect-video rounded-2xl shadow-xl overflow-hidden">
               <video className="w-full h-full object-cover" controls>
                 <source src={t1} type="video/mp4" />
