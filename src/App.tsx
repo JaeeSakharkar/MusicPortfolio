@@ -13,7 +13,7 @@ import sheldon from "./assets/sheldon.jpeg";
 // import audioFile from "./assets/audio.mpeg";
 // import audioFile from "./assets/audio.mpeg";
 import audioFile from "./assets/demo.mp3";
-import teaching from "./assets/teaching.jpeg";
+// import teaching from "./assets/teaching.jpeg";
 import t1 from "./assets/t1.mp4";
 
 import { 
@@ -279,14 +279,14 @@ function App() {
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl flex flex-col items-center">
-            <div className="w-[500px] aspect-video rounded-2xl shadow-xl overflow-hidden">
+            <div className="w-full max-w-xl aspect-video rounded-2xl shadow-xl overflow-hidden">
               <video className="w-full h-full object-cover" controls>
                 <source src={t1} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <p className="text-gray-600 italic mt-4">
+              {/* <p className="text-gray-600 italic mt-4">
                 "Watch my performance at the annual music festival."
-              </p>
+              </p> */}
             </div>
             </div>
             {/* <div>
