@@ -319,7 +319,7 @@ function App() {
             </div>
             <div>
               <h4 className="font-semibold text-gray-900">Email</h4>
-              <p className="text-gray-600">Kartik260405@gmail.com</p>
+              <p className="text-gray-600">kartik260405@gmail.com</p>
             </div>
           </div>
 
