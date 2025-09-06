@@ -10,6 +10,8 @@ import avadhoot from "./assets/avadhoot.jpeg";
 import shubha from "./assets/Shubha.jpeg";
 import yashwant from "./assets/Yashwant.jpeg";
 import sheldon from "./assets/sheldon.jpeg";
+import fazal from "./assets/fazal.jpeg";
+import vivek from "./assets/vivek.jpeg";
 // import audioFile from "./assets/audio.mpeg";
 // import audioFile from "./assets/audio.mpeg";
 import audioFile from "./assets/demo.mp3";
@@ -51,6 +53,7 @@ function App() {
     audio.play(); // Play the audio when the button is clicked
   };
 
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
@@ -64,6 +67,7 @@ function App() {
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-700 hover:text-indigo-600 transition-colors">About</a>
               <a href="#collaborations" className="text-gray-700 hover:text-indigo-600 transition-colors">Collaborations</a>
+              {/* <a href="#portfolio" className="text-gray-700 hover:text-indigo-600 transition-colors">Portfolio</a> */}
               <a href="#teaching" className="text-gray-700 hover:text-indigo-600 transition-colors">Teaching</a>
               <a href="#contact" className="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
             </div>
@@ -187,52 +191,77 @@ function App() {
 
       {/* Collaborations */}
       <section id="collaborations" className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Notable Collaborations</h2>
-            <p className="text-xl text-gray-300">Artists and industry professionals I've had the pleasure to work with</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center group">
-              <img 
-                src={avadhoot}
-                alt="Avadhoot Gupte"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <h3 className="text-lg font-bold mb-1">Avadhoot Gupte</h3>
-              <p className="text-gray-400 text-sm">Folk-Fusion Pioneer</p>
-            </div>
-            <div className="text-center group">
-              <img 
-                src={shubha}
-                alt="Shubha Joshi"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <h3 className="text-lg font-bold mb-1">Shubha Joshi</h3>
-              <p className="text-gray-400 text-sm">Phenomenal Singer</p>
-            </div>
-            <div className="text-center group">
-              <img 
-                src={yashwant}
-                alt="Yashwant Vaishnav"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <h3 className="text-lg font-bold mb-1">Yashwant Vaishnav</h3>
-              <p className="text-gray-400 text-sm">Exceptional Artist Of Young Generation</p>
-            </div>
-            <div className="text-center group">
-              <img 
-                src={sheldon}
-                alt="Sheldon Dsouza"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <h3 className="text-lg font-bold mb-1">Sheldon Dsouza</h3>
-              <p className="text-gray-400 text-sm">Determine musician</p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold mb-4">Notable Collaborations</h2>
+      <p className="text-xl text-gray-300">
+        Artists and industry professionals I've had the pleasure to work with
+      </p>
+    </div>
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Row 1 */}
+      <div className="text-center group">
+        <img
+          src={avadhoot}
+          alt="Avadhoot Gupte"
+          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <h3 className="text-lg font-bold mb-1">Avadhoot Gupte</h3>
+        <p className="text-gray-400 text-sm">Folk-Fusion Pioneer</p>
+      </div>
+      <div className="text-center group">
+        <img
+          src={shubha}
+          alt="Shubha Joshi"
+          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <h3 className="text-lg font-bold mb-1">Shubha Joshi</h3>
+        <p className="text-gray-400 text-sm">Phenomenal Singer</p>
+      </div>
 
+      {/* Row 2 */}
+      <div className="text-center group">
+        <img
+          src={vivek}
+          alt="Vivek Sonar"
+          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <h3 className="text-lg font-bold mb-1">Vivek Sonar</h3>
+        <p className="text-gray-400 text-sm">Talented Musician</p>
+      </div>
+      <div className="text-center group">
+        <img
+          src={yashwant}
+          alt="Yashwant Vaishnav"
+          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <h3 className="text-lg font-bold mb-1">Yashwant Vaishnav</h3>
+        <p className="text-gray-400 text-sm">Exceptional Artist Of Young Generation</p>
+      </div>
+
+      {/* Row 3 */}
+      <div className="text-center group">
+        <img
+          src={fazal}
+          alt="Fazal Qureshi"
+          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <h3 className="text-lg font-bold mb-1">Fazal Qureshi</h3>
+        <p className="text-gray-400 text-sm">Master Percussionist</p>
+      </div>
+      <div className="text-center group">
+        <img
+          src={sheldon}
+          alt="Sheldon Dsouza"
+          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
+        />
+        <h3 className="text-lg font-bold mb-1">Sheldon Dsouza</h3>
+        <p className="text-gray-400 text-sm">Determined Musician</p>
+      </div>
+    </div>
+  </div>
+</section>
+      
       {/* Teaching Outcomes */}
             <section id="teaching" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
