@@ -398,7 +398,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm text-gray-500">
-              © 2024 Kartik Pande. All rights reserved.
+              © 2025 Kartik Pande. All rights reserved.
             </p>
           </div>
         </div>
