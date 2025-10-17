@@ -15,8 +15,10 @@ import vivek from "./assets/vivek1.jpeg";
 // import audioFile from "./assets/audio.mpeg";
 // import audioFile from "./assets/audio.mpeg";
 import audioFile from "./assets/demo.mp3";
-// import teaching from "./assets/teaching.jpeg";
+import teaching_kp from "./assets/teaching_kp.mp4";
 import t1 from "./assets/t1.mp4";
+// import t2 from "./assets/t2.mp4";
+import t2 from "./assets/t2.mp4";
 
 import { 
   Music, 
@@ -326,6 +328,66 @@ function App() {
               />
             </div> */}
           </div>
+
+          {/* <div className="lg:col-span-2 mt-8">
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Teaching in Action</h3>
+                <div className="w-72 h-[400px] rounded-2xl overflow-hidden shadow-xl">
+                  <video 
+                     className="object-cover w-full h-full rounded-2xl"
+                     controls
+                    // poster="https://images.pexels.com/photos/7095037/pexels-photo-7095037.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  >
+                    <source src={t2} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <div className="flex justify-center">
+                <div className="w-full max-w-xl aspect-video rounded-2xl shadow-xl overflow-hidden">
+                <video className="w-full h-full object-cover" controls>
+                <source src={teaching_kp} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+                </div>
+                </div>
+                
+                <p className="text-gray-600 text-center mt-4">
+                  Watch how I guide students through advanced music theory and practical application in my studio
+                </p>
+              </div>
+            </div> */}
+            <div className="lg:col-span-2 mt-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Teaching in Action
+              </h3>
+              <div className="flex justify-center gap-8 items-start">
+      {/* Vertical video */}
+              <div className="w-72 h-[400px] rounded-2xl overflow-hidden shadow-xl">
+                <video 
+                className="object-cover w-full h-full rounded-2xl"
+                controls
+          // poster="https://images.pexels.com/photos/7095037/pexels-photo-7095037.jpeg?auto=compress&cs=tinysrgb&w=800"
+                >
+                  <source src={t2} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+      {/* Horizontal (aspect-video) video */}
+      <div className="w-full max-w-xl aspect-video rounded-2xl shadow-xl overflow-hidden">
+        <video className="w-full h-full object-cover" controls>
+          <source src={teaching_kp} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <p className="text-gray-600 text-center mt-4">
+      Watch how I guide students through advanced music theory and practical application in my studio
+    </p>
+  </div>
+</div>
+
         </div>
       </section>
 
