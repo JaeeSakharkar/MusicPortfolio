@@ -375,12 +375,12 @@ function App() {
                 </video>
               </div>
       {/* Horizontal (aspect-video) video */}
-      <div className="w-full max-w-xl aspect-video rounded-2xl shadow-xl overflow-hidden">
+      {/* <div className="w-full max-w-xl aspect-video rounded-2xl shadow-xl overflow-hidden">
         <video className="w-full h-full object-cover" controls>
           <source src={teaching_kp} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
     </div>
     <p className="text-gray-600 text-center mt-4">
       Watch how I guide students through advanced music theory and practical application in my studio
