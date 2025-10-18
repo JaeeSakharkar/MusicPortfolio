@@ -3,7 +3,7 @@
 import { useState } from "react";
 // import ContactSection from "./components/ContactSection";
 import ContactSection from "./components/Contactsection";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin,Star} from "lucide-react";
 import myPhoto from "./assets/myphoto.jpeg";
 import instrupic from "./assets/instrupic.jpeg";
 import avadhoot from "./assets/avadhoot.jpeg";
@@ -19,6 +19,9 @@ import teaching_kp from "./assets/teaching_kp.mp4";
 import t1 from "./assets/t1.mp4";
 // import t2 from "./assets/t2.mp4";
 import t2 from "./assets/t2.mp4";
+import manan_patil from "./assets/manan_patil.mp4";
+import krishpriya from "./assets/krishpriya.mp4";
+import yashmit_suvarna from "./assets/yashmit_suvarna.mp4";
 
 import { 
   Music, 
@@ -54,6 +57,33 @@ function App() {
   const handlePlayAudio = () => {
     audio.play(); // Play the audio when the button is clicked
   };
+
+  const testimonials = [
+    {
+      name: "Manan Patil",
+      role: "Student",
+      videoUrl: manan_patil,
+      // thumbnail: "https://images.pexels.com/photos/7095664/pexels-photo-7095664.jpeg?auto=compress&cs=tinysrgb&w=400",
+      rating: 5,
+      duration: "0:24"
+    },
+    {
+      name: "Krishpriya",
+      role: "Student",
+      videoUrl: krishpriya,
+      // thumbnail: "https://images.pexels.com/photos/8089416/pexels-photo-8089416.jpeg?auto=compress&cs=tinysrgb&w=400",
+      rating: 5,
+      duration: "0:21"
+    },
+    {
+      name: "Yashmit Suvarna",
+      role: "Student",
+      videoUrl: yashmit_suvarna,
+      // thumbnail: "https://images.pexels.com/photos/6671607/pexels-photo-6671607.jpeg?auto=compress&cs=tinysrgb&w=400",
+      rating: 5,
+      duration: "0:41"
+    }
+  ];
 
 
   return (
@@ -390,6 +420,65 @@ function App() {
 
         </div>
       </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+              Student <span className="text-indigo-600">Video Testimonials</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Hear directly from our students about their musical journey and achievements
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                <div className="relative">
+                  <video 
+                    className="w-full h-96 object-cover object-top cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                    // poster={testimonial.thumbnail}
+                    controls
+                    preload="metadata"
+                  >
+                    <source src={testimonial.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="absolute top-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
+                    {testimonial.duration}
+                  </div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>
+                </div>
+                <div className="p-6">
+                  <div className="flex space-x-1 mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-bold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors">
+                      {testimonial.name}
+                    </div>
+                    <div className="text-gray-500 text-sm">{testimonial.role}</div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between text-sm text-gray-500">
+                      <span className="flex items-center space-x-1">
+                        <Play className="h-3 w-3" />
+                        <span>Video Testimonial</span>
+                      </span>
+                      <span>{testimonial.duration}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* Contact Section */}
      <section id="contact" className="py-20 bg-white">
