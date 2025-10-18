@@ -426,10 +426,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-              Student <span className="text-indigo-600">Video Testimonials</span>
+              Student <span className="text-indigo-600">Testimonials</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear directly from our students about their musical journey and achievements
+              Hear directly from our students about their musical journey and experiences.
             </p>
           </div>
 
