@@ -20,7 +20,7 @@ import t1 from "./assets/t1.mp4";
 // import t2 from "./assets/t2.mp4";
 import t2 from "./assets/t2.mp4";
 import manan_patil from "./assets/manan_patil.mp4";
-import krishpriya from "./assets/krishpriya.mp4";
+import krishpriya from "./assets/Krishpriya.mp4";
 import yashmit_suvarna from "./assets/yashmit_suvarna.mp4";
 
 import { 
